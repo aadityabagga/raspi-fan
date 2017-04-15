@@ -13,7 +13,7 @@ Scripts to control an externally attached fan to the Raspberry Pi 3.
 
 ### Monitoring
 
-(monit)[https://mmonit.com/monit/] can be used to monitor `run_fan.sh` and restart it in case of failure. Example config:
+[monit](https://mmonit.com/monit/) can be used to monitor `run_fan.sh` and restart it in case of failure. Example config:
 
 ~~~~
 check program pifan path "/home/pi/scripts/run_fan.sh status"
@@ -24,4 +24,4 @@ check program pifan path "/home/pi/scripts/run_fan.sh status"
 
 ### See also
 
-(doc/quirks.md)[doc/quirks.md] for some implementation decisions.
+[quirks.md](./doc/quirks.md) for some implementation decisions.
