@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# contron_fan.sh: A script to control a fan connected to a raspberry pi
+# control_fan.sh: A script to control a fan connected to a raspberry pi
 
 # Based upon the following sources:
 # http://www.instructables.com/id/Automated-cooling-fan-for-Pi/
@@ -26,7 +26,7 @@ import signal
 import sys
 import RPi.GPIO as GPIO
 
-# The pin ID (https://www.raspberrypi.org/documentation/usage/gpio-plus-and-raspi2/)
+# The pin ID (https://www.raspberrypi.org/documentation/usage/gpio/README.md)
 PIN = 15
 # Start fan if temp > start temp
 FAN_START = 58
@@ -108,7 +108,7 @@ elif action == "status":
     elif CPU_temp < FAN_END:
         print('Fan should be off')
     else:
-        print('Fan state unkown')
+        print('Fan state unknown')
     exit()
 
 # Handle signal (http://stackoverflow.com/questions/1112343/how-do-i-capture-sigint-in-python)
