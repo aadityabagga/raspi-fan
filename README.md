@@ -25,3 +25,5 @@ check program pifan path "/home/pi/scripts/run_fan.sh status"
 ### See also
 
 [quirks.md](./doc/quirks.md) for some implementation decisions.
+
+[Blog post](https://abchk1234.wordpress.com/2017/04/15/adding-an-external-fan-to-the-raspberry-pi-3-model-b/) for physical setup.
